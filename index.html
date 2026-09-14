@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Prime Star Tutorials Student Hub — JAMB 2027 preparation for serious science students.">
+<title>Prime Star Tutorials | Student Hub</title>
+<link rel="icon" href="prime-star-logo.png">
+<style>
+:root{--blue:#0754c9;--dark:#00358f;--orange:#ff6500;--ink:#111827;--muted:#5d6673;--light:#f5f8fc;--line:#e4e9f0}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo-link{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--dark);font-size:19px}
+.logo-link img{width:48px;height:48px;object-fit:contain}.logo-link span{color:var(--orange)}
+nav{display:flex;gap:21px;align-items:center;font-size:13px;font-weight:800}
+nav a:hover{color:var(--orange)}
+.nav-btn{background:var(--blue);color:#fff;padding:10px 15px;border-radius:7px}
+.hero{padding:72px 0 78px;background:linear-gradient(135deg,#f5f9ff 0%,#fff 60%,#fff6ef 100%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.kicker{display:inline-block;background:var(--orange);color:#fff;padding:7px 12px;border-radius:7px;font-size:12px;font-weight:900;letter-spacing:.5px}
+h1{font-size:clamp(44px,6vw,72px);line-height:.98;letter-spacing:-2.5px;color:var(--dark);margin:18px 0}
+h1 span{color:var(--orange)}.hero-copy{font-size:18px;color:#4b5563;max-width:650px}
+.motto{font-weight:900;color:#111!important;margin-top:18px}
+.actions{margin-top:26px}.btn{display:inline-block;padding:13px 19px;border-radius:8px;font-weight:900;font-size:13px;border:2px solid var(--blue);margin:0 8px 8px 0}
+.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--blue)}
+.welcome-card{background:var(--blue);color:#fff;border-radius:20px;padding:31px;box-shadow:0 18px 45px rgba(0,53,143,.18)}
+.welcome-card .star{font-size:50px;color:var(--orange);line-height:1}.welcome-card h2{margin:5px 0 8px;font-size:28px}.welcome-card p{color:#edf4ff;font-size:15px}.welcome-card li{margin:8px 0}
+section{padding:70px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 40px}.section-head h2{margin:0 0 9px;font-size:35px;color:var(--dark);line-height:1.1}.section-head p{margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}.card h3{margin:8px 0;color:var(--dark)}.card p{color:var(--muted);margin:0}.icon{font-size:27px;color:var(--orange)}
+.subjects{background:var(--light)}.subject-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.subject{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 8px;text-align:center;font-weight:900;color:var(--dark)}.subject small{display:block;color:#737b86;font-weight:600;margin-top:4px}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.plan{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}.plan.popular{border:2px solid var(--orange);transform:translateY(-5px)}.plan h3{margin:0;color:var(--dark)}.duration{font-size:12px;color:var(--muted);font-weight:800}.price{font-size:29px;font-weight:900;color:var(--blue);margin:14px 0}.popular .price{color:var(--orange)}.plan ul{padding-left:19px;color:#4b5563;font-size:13px}.plan li{margin:8px 0}.badge{display:inline-block;background:var(--orange);color:#fff;border-radius:20px;padding:5px 9px;font-size:10px;font-weight:900;margin-bottom:9px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.step{padding:21px;border-top:4px solid var(--orange);background:#fff;border-radius:0 0 12px 12px;box-shadow:0 8px 25px rgba(0,0,0,.05)}.num{color:var(--orange);font-weight:900;font-size:12px}.step h3{margin:7px 0;color:var(--dark)}.step p{margin:0;color:var(--muted);font-size:14px}
+.guide{background:#fff}.notice{background:#fff8f2;border-left:4px solid var(--orange);padding:18px 20px;border-radius:8px;color:#4b5563;margin-top:25px}
+.timetable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.timetable th,.timetable td{padding:14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}.timetable th{background:var(--dark);color:#fff}.timetable tr:last-child td{border-bottom:0}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.resource{border:1px solid var(--line);padding:23px;border-radius:13px}.resource h3{color:var(--dark);margin:0 0 7px}.resource p{color:var(--muted);font-size:14px;margin:0 0 14px}.resource a{font-weight:900;color:var(--blue);font-size:13px}
+.cbt{background:var(--light)}.cbt-box{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cbt-box .card{background:#fff}.cbt-box strong{color:var(--dark)}
+.announcement{border:1px solid var(--line);padding:22px;border-radius:13px;margin-bottom:14px}.announcement strong{color:var(--blue)}.announcement p{margin:5px 0 0;color:var(--muted)}
+.cta{background:var(--dark);color:#fff;text-align:center;padding:65px 20px}.cta h2{font-size:37px;margin:0 0 10px}.cta p{color:#e6efff;max-width:650px;margin:auto}.cta .btn{margin-top:24px;background:var(--orange);border-color:var(--orange);color:#fff}
+footer{background:#061e50;color:#dce7fb;padding:31px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot b{color:#fff}.foot a{color:#fff}
+@media(max-width:850px){nav{display:none}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.plans{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.subject-grid{grid-template-columns:repeat(2,1fr)}.resource-grid,.cbt-box{grid-template-columns:1fr}}
+@media(max-width:500px){.plans,.steps{grid-template-columns:1fr}.hero{padding:55px 0}.logo-link{font-size:15px}.logo-link img{width:42px;height:42px}h1{font-size:49px}}
+
+.schedule-note{margin:0 auto 22px;max-width:760px;text-align:center;padding:18px 16px;border-radius:16px;background:linear-gradient(135deg,#00358f,#0754c9);color:#fff;box-shadow:0 10px 28px rgba(0,53,143,.16)}
+.schedule-note span{display:block;font-size:.78rem;font-weight:800;letter-spacing:1.5px;color:#ff8c00;margin-bottom:5px}.schedule-note strong{display:block;font-size:1.25rem;letter-spacing:.5px}.schedule-note small{display:block;margin-top:5px;opacity:.92}
+.timetable{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.timetable th{background:#0754c9;color:#fff;padding:15px 12px;font-size:.88rem}.timetable td{background:#fff;border-bottom:1px solid #e6ebf2;padding:15px 12px;text-align:center}.timetable tr:last-child td{border-bottom:0}.timetable td:first-child{color:#00358f;min-width:105px}.subject-chip{display:inline-block;padding:8px 12px;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.3px}.subject-chip.chem,.subject-chip.math,.subject-chip.phys,.subject-chip.bio,.subject-chip.eng{background:#eef4ff;color:#00358f}.subject-chip.revision,.subject-chip.past{background:#fff3e6;color:#d76500}.subject-chip.cbt{background:#ff8c00;color:#fff;padding:9px 18px}.sunday-row td{background:#fffaf4}
+@media(max-width:680px){.timetable{font-size:.82rem}.timetable th,.timetable td{padding:12px 7px}.subject-chip{padding:7px 8px;font-size:.7rem}.subject-chip.cbt{padding:8px 10px}.schedule-note strong{font-size:1.05rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="logo-link" href="#home"><img src="prime-star-logo.png" alt="Prime Star Tutorials logo"><span>PRIME STAR TUTORIALS</span></a>
+<nav>
+<a href="#about">About</a><a href="#subjects">Subjects</a><a href="#plans">Plans</a><a href="#guide">Student Guide</a><a href="#timetable">Timetable</a><a href="#resources">Resources</a><a href="#cbt">CBT</a><a class="nav-btn" href="#contact">Contact</a>
+</nav>
+</div></header>
+
+<main id="home">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="kicker">2027 JAMB PREPARATION</span>
+<h1>Prepare Smart.<br><span>Aim Higher.</span></h1>
+<p class="hero-copy">Welcome to the Prime Star Student Hub — the central home for serious science students preparing for JAMB 2027.</p>
+<p class="motto">Illuminating the Path to Academic Excellence.</p>
+<div class="actions"><a class="btn primary" href="#plans">VIEW REGISTRATION PLANS</a><a class="btn secondary" href="#guide">STUDENT GUIDE</a></div>
+</div>
+<div class="welcome-card"><div class="star">★</div><h2>Welcome, PrimeStar.</h2><p>Your preparation is more than reading. It is a system.</p><ul><li>Syllabus-focused classes</li><li>JAMB past questions & corrections</li><li>Weekly CBT examinations</li><li>Performance tracking</li><li>Focused revision before JAMB</li></ul></div>
+</div>
+</section>
+
+<section id="about"><div class="wrap"><div class="section-head"><h2>Welcome to Prime Star Tutorials</h2><p>A structured online preparation system designed to help serious students learn, practise, measure progress and improve.</p></div>
+<div class="cards"><div class="card"><div class="icon">01</div><h3>Structured Learning</h3><p>Follow a clear preparation system instead of studying randomly.</p></div><div class="card"><div class="icon">02</div><h3>Practical Practice</h3><p>Learn concepts, solve JAMB-style questions and understand corrections.</p></div><div class="card"><div class="icon">03</div><h3>Performance Focus</h3><p>Use regular CBTs and performance records to identify areas that need improvement.</p></div></div></div></section>
+
+<section class="subjects" id="subjects"><div class="wrap"><div class="section-head"><h2>2027 JAMB Subjects</h2><p>Core subjects available across Prime Star's science-student preparation tracks.</p></div>
+<div class="subject-grid"><div class="subject">English Language<small>Compulsory</small></div><div class="subject">Mathematics<small>Where required</small></div><div class="subject">Physics<small>Science</small></div><div class="subject">Chemistry<small>Science</small></div><div class="subject">Biology<small>Science</small></div></div></div></section>
+
+<section id="plans"><div class="wrap"><div class="section-head"><h2>Registration & Pricing Plans</h2><p>Choose the preparation package that fits your JAMB 2027 goal.</p></div>
+<div class="plans">
+<div class="plan"><h3>PRIME</h3><div class="duration">1 MONTH</div><div class="price">₦6,000</div><ul><li>JAMB Syllabus-Focused Classes</li><li>JAMB Past Questions & Corrections</li><li>Weekly JAMB-Standard CBT Exams</li></ul></div>
+<div class="plan"><h3>PRIME PLUS</h3><div class="duration">2 MONTHS</div><div class="price">₦11,000</div><ul><li>Extended JAMB Syllabus Coverage</li><li>Past Questions + Detailed Corrections</li><li>Explained Chemistry Video Lessons</li><li>Prime Star Formula Bank + E-Textbooks</li></ul></div>
+<div class="plan popular"><span class="badge">MOST POPULAR</span><h3>PRIME PREMIUM</h3><div class="duration">3 MONTHS</div><div class="price">₦16,000</div><ul><li>Complete JAMB Syllabus Coverage</li><li>Explained Chemistry Videos + Premium Study Materials</li><li>Formula Bank + Intensive Calculation Practice</li><li>Weekly CBTs + Performance Tracking</li><li>Targeted Revision for Weak Topics</li></ul></div>
+<div class="plan"><h3>PRIME ELITE</h3><div class="duration">FULL PROGRAMME</div><div class="price">₦22,000</div><ul><li>Everything in Prime Premium</li><li>Complete JAMB Preparation Resources</li><li>Intensive Revision & Exam-Focused Practice</li><li>Additional CBTs + Detailed Performance Analysis</li><li>Personalized Weak-Topic Revision Guidance</li><li>Final Revision Class / JAMB Bootcamp</li><li>Priority Academic Support</li></ul></div>
+</div></div></section>
+
+<section id="guide" class="guide"><div class="wrap"><div class="section-head"><h2>PrimeStar Student Guide</h2><p>Your journey from registration to JAMB preparation.</p></div>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Register</h3><p>Choose your package and complete the official registration process.</p></div><div class="step"><div class="num">02</div><h3>Get Your PST ID</h3><p>Receive your unique Prime Star Student ID, for example PST/27/001.</p></div><div class="step"><div class="num">03</div><h3>Join Your Classes</h3><p>Access the official learning spaces and follow the timetable.</p></div><div class="step"><div class="num">04</div><h3>Learn & Practise</h3><p>Attend lessons, study materials, solve questions and submit assignments.</p></div><div class="step"><div class="num">05</div><h3>Take Weekly CBTs</h3><p>Complete scheduled CBT examinations and take your preparation seriously.</p></div><div class="step"><div class="num">06</div><h3>Track Progress</h3><p>Performance records help identify strengths and weak topics.</p></div><div class="step"><div class="num">07</div><h3>Revise</h3><p>Strengthen weak areas through targeted revision and intensive practice.</p></div><div class="step"><div class="num">08</div><h3>JAMB Ready</h3><p>Enter the examination with a stronger preparation system and clear strategy.</p></div></div>
+<div class="notice"><strong>Prime Star Student Code:</strong> Discipline • Consistency • Excellence. Respect tutors and fellow PrimeStars, attend classes, take CBTs seriously, and do not share paid materials or class links without permission.</div></div></section>
+
+<section id="timetable"><div class="wrap"><div class="section-head"><h2>Class Timetable</h2><p>Prime Star's structured weekly learning schedule — two focused sessions each class day, with Biology / Mathematics for students following their chosen track.</p></div>
+<div class="schedule-note"><span>2027 JAMB PREPARATION</span><strong>WEEKLY CLASS SCHEDULE</strong><small>Monday–Saturday • Two learning sessions daily</small></div>
+<table class="timetable"><thead><tr><th>DAY</th><th>8:00PM – 10:00PM</th><th>10:05PM – 12:05AM</th></tr></thead><tbody>
+<tr><td><strong>MONDAY</strong></td><td><span class="subject-chip eng">ENGLISH</span></td><td><span class="subject-chip chem">CHEMISTRY</span></td></tr>
+<tr><td><strong>TUESDAY</strong></td><td><span class="subject-chip phys">PHYSICS</span></td><td><span class="subject-chip bio">BIOLOGY / MATHEMATICS</span></td></tr>
+<tr><td><strong>WEDNESDAY</strong></td><td><span class="subject-chip chem">CHEMISTRY</span></td><td><span class="subject-chip eng">ENGLISH</span></td></tr>
+<tr><td><strong>THURSDAY</strong></td><td><span class="subject-chip bio">BIOLOGY / MATHEMATICS</span></td><td><span class="subject-chip phys">PHYSICS</span></td></tr>
+<tr><td><strong>FRIDAY</strong></td><td><span class="subject-chip eng">ENGLISH</span></td><td><span class="subject-chip chem">CHEMISTRY</span></td></tr>
+<tr><td><strong>SATURDAY</strong></td><td><span class="subject-chip phys">PHYSICS</span></td><td><span class="subject-chip bio">BIOLOGY / MATHEMATICS</span></td></tr>
+<tr class="sunday-row"><td><strong>SUNDAY</strong></td><td colspan="2"><span class="subject-chip cbt">STANDARD JAMB MOCK EXAM • 3:00PM – 5:00PM</span></td></tr>
+</tbody></table>
+<div class="notice"><strong>Prime Star Standard:</strong> Biology / Mathematics is a combined session: Medical/health-track students follow Biology, while Engineering-track students follow Mathematics. Every class combines concept teaching, worked examples, JAMB past questions, practice and corrections.</div></div></section>
+
+<section class="subjects" id="resources"><div class="wrap"><div class="section-head"><h2>Study Resources</h2><p>The resource area for notes, formula banks, videos, e-textbooks and revision materials.</p></div>
+<div class="resource-grid"><div class="resource"><h3>Lesson Notes</h3><p>Topic-by-topic notes prepared around the JAMB syllabus.</p><a href="#contact">Access via student channels →</a></div><div class="resource"><h3>Formula Bank</h3><p>Useful formulas and calculation references for relevant subjects.</p><a href="#contact">Access via student channels →</a></div><div class="resource"><h3>Explained Chemistry Videos</h3><p>Recorded Chemistry explanations for students on eligible plans.</p><a href="#contact">Access via student channels →</a></div><div class="resource"><h3>Past Questions</h3><p>Practice materials with corrections and explanations.</p><a href="#contact">Access via student channels →</a></div><div class="resource"><h3>E-Textbooks</h3><p>Approved digital study resources included according to package.</p><a href="#contact">Access via student channels →</a></div><div class="resource"><h3>Revision Materials</h3><p>Focused revision resources for weak topics and final preparation.</p><a href="#contact">Access via student channels →</a></div></div></div></section>
+
+<section id="cbt"><div class="wrap"><div class="section-head"><h2>Weekly CBT Centre</h2><p>Your weekly examination and performance-monitoring area.</p></div>
+<div class="cbt-box"><div class="card"><h3>How the CBT works</h3><p>Weekly CBTs are designed to provide regular JAMB-style practice. Students complete the test seriously, while Prime Star uses the results to monitor performance and identify weak areas.</p></div><div class="card"><h3>Performance Reporting</h3><p>Results are recorded against the student's Prime Star Student ID. Public rankings can be shared using Student IDs rather than students' names, while individual performance records remain private.</p></div></div>
+<div class="notice"><strong>CBT access:</strong> The live CBT provider/link will be added here once Prime Star's final CBT platform is selected. This page is ready for that integration.</div></div></section>
+
+<section id="announcements" class="subjects"><div class="wrap"><div class="section-head"><h2>Announcements</h2><p>Official Prime Star updates will appear here.</p></div>
+<div class="announcement"><strong>2027 JAMB Programme</strong><p>Registration information, class-start announcements, timetable updates and important student notices will be posted here.</p></div>
+<div class="announcement"><strong>Stay Connected</strong><p>Registered PrimeStars should also follow official Telegram and WhatsApp announcements for time-sensitive class information.</p></div></div></section>
+
+<section class="cta" id="contact"><h2>Ready to Become a PrimeStar?</h2><p>Start your JAMB 2027 preparation with Prime Star Tutorials — Illuminating the Path to Academic Excellence.</p>
+<a class="btn" href="https://wa.me/2348169402129" target="_blank" rel="noopener">WHATSAPP PRIME STAR</a></section>
+</main>
+
+<footer><div class="wrap foot"><div><b>PRIME STAR TUTORIALS</b><br>Illuminating the Path to Academic Excellence.</div><div>WhatsApp: <a href="https://wa.me/2348169402129">08169402129</a><br>TikTok: <b>@primestartutorials</b></div><div>© 2026 Prime Star Tutorials. All Rights Reserved.</div></div></footer>
+</body></html>
